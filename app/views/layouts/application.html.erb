@@ -9,9 +9,10 @@
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <div class="container">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <p><%= "Signed in user id: #{current_user.id}" if user_signed_in? %></p>
       <%= yield %>
     </div>
   </body>
