@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  title: MyString
-  content: MyText
+article_one:
+  title: First article
+  content: Have a look at my first blog
+  user_id: 1
 
-two:
-  title: MyString
-  content: MyText
+article_two:
+  title: Article Two
+  content: This is the content for article two
+  user_id: 2

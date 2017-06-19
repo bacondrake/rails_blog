@@ -1,7 +1,8 @@
 require 'test_helper'
 
 class UserTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "user has a valid email address" do
+    u = users(:tim)
+    assert u.valid?, "Email address is not valid"
+  end
 end
